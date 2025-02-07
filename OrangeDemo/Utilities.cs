@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace OrangeDemo
 {
-    public class Utilities
+    public static class Utilities
     {
-        public static string url = "https://opensource-demo.orangehrmlive.com/web/index.php/";
-        public static string login = "Admin";
-        public static string password = "admin123";
+        public const string url = "https://opensource-demo.orangehrmlive.com/web/index.php/";
+        public const string login = "Admin";
+        public const string password = "admin123";
 
-        public void GenerateLetter()
+        public static string GenerateLetter(int length)
         {
-
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            Random random = new Random();
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
-        public void GenerateNumbers() 
-        { 
-            
+        public static string GenerateNumbers(int length) 
+        {
+            const string digits = "0123456789";
+            Random random = new Random();
+            return new string(Enumerable.Repeat(digits, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }

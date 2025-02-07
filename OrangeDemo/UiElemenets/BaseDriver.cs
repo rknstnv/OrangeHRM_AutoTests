@@ -29,6 +29,7 @@ namespace OrangeDemo.UiElemenets
 
             return driver;
         }
+
         public void Quiet()
         {
             driver.Quit();

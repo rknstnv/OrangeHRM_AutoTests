@@ -101,3 +101,4 @@ C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\refint\Orange
 C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\OrangeDemo.pdb
 C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\OrangeDemo.genruntimeconfig.cache
 C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\ref\OrangeDemo.dll
+C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\OrangeDemo.sourcelink.json

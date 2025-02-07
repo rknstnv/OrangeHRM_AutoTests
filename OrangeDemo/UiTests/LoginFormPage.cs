@@ -16,10 +16,22 @@ namespace OrangeDemo.UiTests
         public void OpenLoginPage()
         {
             GoToUrl();
-               page.Fill_Field("", Utilities.login);
-               page.Fill_Field("", Utilities.password);
-               page.Press_Button(" Login ");
-         //   Click(By.XPath("//div[text()=' Login ']"));
+
+            SendKeys(By.XPath($"//input[@placeholder='Username']"), Utilities.login);
+            SendKeys(By.XPath($"//input[@placeholder='Password']"), Utilities.password);
+
+            Click(By.XPath($"//button[text()=' Login ']"));
+
+            //   page.Fill_Field("Username", Utilities.login);
+
+            //   page.Fill_Field("Password", Utilities.password);
+
+            //   page.Press_Button(" Login ");
+            Thread.Sleep(50000);
+
+            Quiet();
+
+           
         }
     }
 }
