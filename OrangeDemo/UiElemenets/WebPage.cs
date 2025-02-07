@@ -27,7 +27,7 @@ namespace OrangeDemo.UiElemenets
 
         public void Fill_FieldByLabel(string fieldName, string text)
         {
-            SendKeys(By.XPath($"//label[contains(text(), '{fieldName}')]"), text);
+            SendKeys(By.XPath($"//label[text()= '{fieldName}']"), text);
         }
 
         public void SelectMenu(string menuName) 

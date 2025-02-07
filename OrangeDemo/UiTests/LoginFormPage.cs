@@ -15,10 +15,10 @@ namespace OrangeDemo.UiTests
         [Test]
         public void OpenLoginPage()
         {
-          //  GoToUrl();
-            //   page.Fill_Filed("", Utilities.login);
-            //   page.Fill_Filed("", Utilities.password);
-            //   page.Press_Button(" Login ");
+            GoToUrl();
+               page.Fill_Field("", Utilities.login);
+               page.Fill_Field("", Utilities.password);
+               page.Press_Button(" Login ");
          //   Click(By.XPath("//div[text()=' Login ']"));
         }
     }
