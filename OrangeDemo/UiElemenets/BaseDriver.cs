@@ -11,28 +11,30 @@ namespace OrangeDemo.UiElemenets
 {
     public class BaseDriver
     {
-        private IWebDriver driver;
+        protected static IWebDriver driver;
 
         public BaseDriver()
         {
-            driver = StartBrowser();
+            if (driver == null)
+            {
+                driver = StartBrowser();
+            }
         }
+
         private WebDriver StartBrowser()
         {
             ChromeOptions options = new ChromeOptions();
-
             options.AddArgument("start-maximized");
             options.AddArguments("--incognito");
 
             string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            WebDriver driver = new ChromeDriver(path + @"\drivers\", options);
-
-            return driver;
+            return new ChromeDriver(path + @"\drivers\", options);
         }
 
         public void Quiet()
         {
             driver.Quit();
+            driver = null;
         }
 
         public void GoToUrl()

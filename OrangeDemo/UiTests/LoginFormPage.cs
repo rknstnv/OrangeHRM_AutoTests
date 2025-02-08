@@ -12,31 +12,29 @@ namespace OrangeDemo.UiTests
     {
         public WebPage page;
 
-        [OneTimeTearDown]
-        public void Quiet()
+        public LoginFormPage()
+        {
+            page = new WebPage();
+        }
+
+        [TearDown]
+        public void CloseBrowser()
         {
             Quiet();
         }
 
         [Order(0)]
-        [TestCase(Description = " ")]
+        [TestCase(Description = "Логин")]
         public void OpenLoginPage()
         {
             GoToUrl();
-
-         //   SendKeys(By.XPath($"//input[@placeholder='Username']"), Utilities.login);
-         //   SendKeys(By.XPath($"//input[@placeholder='Password']"), Utilities.password);
-
-        //    Click(By.XPath($"//button[text()=' Login ']"));
 
                page.Fill_Field("Username", Utilities.login);
 
                page.Fill_Field("Password", Utilities.password);
 
                page.Press_Button(" Login ");
-         //   Thread.Sleep(50000);
 
-         //   Quiet();
         }
     }
 }

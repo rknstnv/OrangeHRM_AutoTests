@@ -12,12 +12,8 @@ namespace OrangeDemo.UiElemenets
 {
     public class WebPage : BaseDriver
     {
-        public BaseDriver BaseDriver { get; private set; } // До сих пор не понимаю этого действия
+        public WebPage() { }
 
-        public WebPage(BaseDriver driver) // И этого 
-        {
-            BaseDriver = driver;
-        }
         public void Press_Button(string buttonName)
         {
             Click(By.XPath($"//button[text()=' {buttonName} ']"));
