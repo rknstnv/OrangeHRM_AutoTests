@@ -33,8 +33,7 @@ namespace OrangeDemo.UiTests
 
                page.Fill_Field("Password", Utilities.password);
 
-               page.Press_Button(" Login ");
-
+               page.Press_Button("Login");
         }
     }
 }
