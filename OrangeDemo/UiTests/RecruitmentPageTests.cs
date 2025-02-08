@@ -9,7 +9,7 @@ namespace OrangeDemo.UiTests
 {
     public class RecruitmentPageTests : RecruitmentPage
     {
-        string email = "test@test.com";
+        string email = "test" + Utilities.GenerateNumbers(2) + "@test.com";
 
         [Order(0)]
         [TestCase(Description = "Добавление соискателя")]
