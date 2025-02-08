@@ -30,7 +30,7 @@ namespace OrangeDemo.UiElemenets
 
         public void SelectMenu(string menuName) 
         {
-            Click(By.XPath($"//span[text()='{menuName}']"));        
+            Click(By.XPath($"//span[text()='{menuName}']"));
         }
     }
 }

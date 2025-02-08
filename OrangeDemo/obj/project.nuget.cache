@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5lWz7Ksl82w=",
+  "dgSpecHash": "leoqpNDDJE8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Renat\\source\\repos\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Renat\\.nuget\\packages\\nunit3testadapter\\4.6.0\\nunit3testadapter.4.6.0.nupkg.sha512",
     "C:\\Users\\Renat\\.nuget\\packages\\selenium.support\\4.28.0\\selenium.support.4.28.0.nupkg.sha512",
     "C:\\Users\\Renat\\.nuget\\packages\\selenium.webdriver\\4.28.0\\selenium.webdriver.4.28.0.nupkg.sha512",
+    "C:\\Users\\Renat\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
     "C:\\Users\\Renat\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

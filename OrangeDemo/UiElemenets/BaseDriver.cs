@@ -79,5 +79,10 @@ namespace OrangeDemo.UiElemenets
 
             return text;
         }
+        public void WaitForElement(By locator, int timeout = 10)
+        {
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator));
+        }
     }
 }
