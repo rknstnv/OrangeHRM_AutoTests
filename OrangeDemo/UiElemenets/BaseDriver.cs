@@ -37,6 +37,11 @@ namespace OrangeDemo.UiElemenets
             driver = null;
         }
 
+        public void Dispose()
+        {
+            Quiet();
+        }
+
         public void GoToUrl()
         {
             driver.Url = Utilities.url;

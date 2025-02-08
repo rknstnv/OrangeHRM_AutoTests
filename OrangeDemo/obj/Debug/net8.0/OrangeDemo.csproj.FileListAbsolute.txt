@@ -102,3 +102,4 @@ C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\OrangeDemo.pd
 C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\OrangeDemo.genruntimeconfig.cache
 C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\ref\OrangeDemo.dll
 C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\obj\Debug\net8.0\OrangeDemo.sourcelink.json
+C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll

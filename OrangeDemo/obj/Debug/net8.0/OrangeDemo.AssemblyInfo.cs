@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrangeDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63d233aebe46bfed410c0581c7e6fffdfe729fe5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fec1ccc5aca4af4999c6652124302b1e8c6fbf8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrangeDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrangeDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

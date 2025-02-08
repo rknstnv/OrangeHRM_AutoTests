@@ -11,7 +11,6 @@ namespace OrangeDemo.UiTests
 {
     public class LoginFormPage : LoginPage
     {
-
         [Order(0)]
         [TestCase(Description = "Логин")]
         public void OpenLoginPage()
