@@ -39,7 +39,7 @@ namespace OrangeDemo.Pages
                 page.Fill_Field("Password", Utilities.password);
                 page.Press_Button("Login");
 
-                // ⏳ Ждём загрузку страницы после логина
+                //  Ждём загрузку страницы после логина
                 WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
                 wait.Until(d => d.FindElement(By.XPath("//span[text()='Dashboard']")));
             }
@@ -48,6 +48,5 @@ namespace OrangeDemo.Pages
                 Console.WriteLine("Пользователь уже авторизован.");
             }
         }
-
     }
 }

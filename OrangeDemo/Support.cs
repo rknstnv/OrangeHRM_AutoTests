@@ -10,7 +10,7 @@ namespace OrangeDemo
 {
     public class Support
     {
-        public BaseDriver Driver { get; private set; } // Тут приват на сете, означает что передать значение можем только тут, а тянуть можем куда хотим
+        public BaseDriver Driver { get; private set; }
 
         [OneTimeSetUp]
         public virtual void SetUp()
@@ -20,9 +20,9 @@ namespace OrangeDemo
         }
         public void login()
         {
-            Driver.GoToUrl(); // Переиди по юрл, переменную юрл задали в бейсдрайвере, а он в свою очередь тянет инфу с utilities 
+            Driver.GoToUrl();
 
-            Driver.SendKeys(By.Name("username"), Utilities.login); // Введи в поле такие то данные, найденные в utilities
+            Driver.SendKeys(By.Name("username"), Utilities.login); 
             Driver.SendKeys(By.Name("password"), Utilities.password, true);
         }
 

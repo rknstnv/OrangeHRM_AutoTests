@@ -16,7 +16,7 @@ namespace OrangeDemo.UiElemenets
 
         public void Press_Button(string buttonName)
         {
-            Click(By.XPath($"//button[text()=' {buttonName} ']"));
+            Click(By.XPath($"//button[text()=' {buttonName}']"));
         }
         public void Fill_Field(string fieldName, string text)
         {
@@ -42,6 +42,24 @@ namespace OrangeDemo.UiElemenets
             {
                 driver.Navigate().GoToUrl(fullUrl);
             }
+        }
+
+        public void Message_FieldIsRequired(string fieldName) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
+        {
+            string xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']"; // Указываем наш путь
+
+            IWebElement errorMessage = driver.FindElement(By.XPath(xpath)); // Обращаемся к элементу errorMessage по нашему xpath
+
+            Assert.IsTrue(errorMessage.Displayed); // Проверка, что наша ошибка отображается
+        }
+
+        public void Message_Succesfully(string messageValue)
+        {
+            string xpath = $"//p[text()='{messageValue}']";
+
+            IWebElement succesMessage = driver.FindElement(By.XPath(xpath)); 
+            
+            Assert.IsTrue(succesMessage.Displayed);
         }
     }
 }
