@@ -18,18 +18,16 @@ namespace OrangeDemo.UiElemenets
             if (driver == null)
             {
                 driver = StartBrowser();
-            }
+            }     
         }
 
-        private WebDriver StartBrowser()
-        {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("start-maximized");
-            options.AddArguments("--incognito");
-
-            string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            return new ChromeDriver(path + @"\drivers\", options);
-        }
+           private WebDriver StartBrowser()
+           {
+               ChromeOptions options = new ChromeOptions();
+               options.AddArgument("start-maximized");
+               options.AddArguments("--incognito");
+               return new ChromeDriver(options);
+           }
 
         public void Quiet()
         {

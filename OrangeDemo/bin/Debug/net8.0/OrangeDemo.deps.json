@@ -14,6 +14,7 @@
           "NUnit3TestAdapter": "4.6.0",
           "Selenium.Support": "4.28.0",
           "Selenium.WebDriver": "4.28.0",
+          "Selenium.WebDriver.ChromeDriver": "133.0.6943.12600",
           "SeleniumExtras.WaitHelpers": "1.0.2",
           "coverlet.collector": "6.0.4"
         },
@@ -328,6 +329,7 @@
           }
         }
       },
+      "Selenium.WebDriver.ChromeDriver/133.0.6943.12600": {},
       "SeleniumExtras.WaitHelpers/1.0.2": {
         "dependencies": {
           "Selenium.WebDriver": "4.28.0"
@@ -438,6 +440,13 @@
       "sha512": "sha512-g4iZWBHQH5dObJQKcKXsol8yFJPIkXhVdn/8P726d4OmpHgQ9aYSwtTCWo+FUYHIkMS+haItgeOT6hilmLeHNw==",
       "path": "selenium.webdriver/4.28.0",
       "hashPath": "selenium.webdriver.4.28.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver.ChromeDriver/133.0.6943.12600": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eIpa+NH1FkLOrWE7KDFh5xcW/6zmum95PkSeqPzJbgnO3SCs318owzLw1KNnGPpOStRKyWvFREEEMvGtnAdSSg==",
+      "path": "selenium.webdriver.chromedriver/133.0.6943.12600",
+      "hashPath": "selenium.webdriver.chromedriver.133.0.6943.12600.nupkg.sha512"
     },
     "SeleniumExtras.WaitHelpers/1.0.2": {
       "type": "package",
