@@ -31,5 +31,60 @@ namespace OrangeDemo.UiTests
 
             page.Message_Succesfully("Successfully Saved");
         }
+
+        #region Негативные
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи без заполнения поля Имя")]
+        public void Fail_Create_WithoutFirstName()
+        {
+            page.OpenPage("recruitment/viewCandidates");
+
+            page.Press_Button("Add");
+
+            page.Fill_Field("Last Name", "Avtotest " + Utilities.GenerateLetter(3));
+
+            page.Fill_FieldByLabel("Email", email);
+
+            page.Press_Button("Save");
+
+            page.Message_FieldIsRequired("First Name");
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи без заполнения поля Фамилия")]
+        public void Fail_Create_WithoutLastName()
+        {
+            page.OpenPage("recruitment/viewCandidates");
+
+            page.Press_Button("Add");
+
+            page.Fill_Field("First Name", "Avtotest " + Utilities.GenerateLetter(3));
+
+            page.Fill_FieldByLabel("Email", email);
+
+            page.Press_Button("Save");
+
+            page.Message_FieldIsRequired("Last Name");
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи без заполнения поля Email")]
+        public void Fail_Create_WithoutEmail()
+        {
+            page.OpenPage("recruitment/viewCandidates");
+
+            page.Press_Button("Add");
+
+            page.Fill_Field("First Name", "Avtotest " + Utilities.GenerateLetter(3));
+
+            page.Fill_Field("Last Name", "Avtotest " + Utilities.GenerateLetter(3));
+
+            page.Press_Button("Save");
+
+            page.Message_FieldIsRequired("Email");
+        }
+
+        #endregion
     }
 }
