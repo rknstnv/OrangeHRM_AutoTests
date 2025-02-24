@@ -4,3 +4,5 @@ OrangeDemo/bin/Debug/net8.0/chromedriver.exe
 .vs/
 bin/Debug/net8.0/
 OrangeDemo/obj/
+OrangeDemo/bin/Debug/
+OrangeDemo/bin/Debug/net8.0/
