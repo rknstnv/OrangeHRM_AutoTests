@@ -88,5 +88,3 @@ namespace OrangeDemo.UiTests
         #endregion
     }
 }
-
-
