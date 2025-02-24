@@ -21,15 +21,15 @@ namespace OrangeDemo.UiTests
 
             page.Press_Button("Add");
 
-            page.Fill_Field("First Name", "Avtotest" + Utilities.GenerateLetter(3));
+            page.Fill_Field("First Name", "Avtotest " + Utilities.GenerateLetter(3));
 
-            page.Fill_Field("Last Name", "Avtotest" + Utilities.GenerateLetter(3));
+            page.Fill_Field("Last Name", "Avtotest " + Utilities.GenerateLetter(3));
 
             page.Fill_FieldByLabel("Email", email);
 
             page.Press_Button("Save");
 
-
+            page.Message_Succesfully("Successfully Saved");
         }
     }
 }

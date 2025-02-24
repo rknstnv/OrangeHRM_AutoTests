@@ -16,7 +16,7 @@ namespace OrangeDemo.UiElemenets
 
         public void Press_Button(string buttonName)
         {
-            Click(By.XPath($"//button[text()=' {buttonName}']"));
+            Click(By.XPath($"//button[text()=' {buttonName} ']"));
         }
         public void Fill_Field(string fieldName, string text)
         {
@@ -57,7 +57,9 @@ namespace OrangeDemo.UiElemenets
         {
             string xpath = $"//p[text()='{messageValue}']";
 
-            IWebElement succesMessage = driver.FindElement(By.XPath(xpath)); 
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            IWebElement succesMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); 
             
             Assert.IsTrue(succesMessage.Displayed);
         }
