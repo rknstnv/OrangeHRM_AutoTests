@@ -28,7 +28,6 @@ namespace OrangeDemo.Pages
 
             if (!isLoggedIn) // Если не залогинен – вводим логин и пароль
             {
-                Console.WriteLine("Пользователь не авторизован. Выполняем вход...");
                 page.Fill_Field("Username", Utilities.login);
                 page.Fill_Field("Password", Utilities.password);
                 page.Press_Button("Login");
@@ -43,7 +42,7 @@ namespace OrangeDemo.Pages
             }
         }
 
-        public void CreateRecruitment(string firstName, string lastName, string Email)
+        public void CreateRecruitment(string firstName, string lastName, string Email, string middleName = null, string contanctNumber = null, string date = null, string notes = null)
         {
             page.OpenPage("dashboard/index");
 
@@ -56,6 +55,11 @@ namespace OrangeDemo.Pages
             page.Fill_Field("Last Name", lastName);
 
             page.Fill_FieldByLabel("Email", Email);
+
+            if(middleName)
+            {
+                page.Fill_Field("Middle Name", middleName);
+            }
         }
 
     }

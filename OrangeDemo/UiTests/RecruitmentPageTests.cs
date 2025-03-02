@@ -34,7 +34,7 @@ namespace OrangeDemo.UiTests
 
             page.Press_Button("Save");
 
-            page.Message_FieldIsRequired("First Name");
+            page.ErrorMessage("First Name", "Required");
         }
 
         [Order(1)]
@@ -45,7 +45,7 @@ namespace OrangeDemo.UiTests
 
             page.Press_Button("Save");
 
-            page.Message_FieldIsRequired("Last Name");
+            page.ErrorMessage("Last Name", "Required");
         }
 
         [Order(1)]
@@ -56,7 +56,49 @@ namespace OrangeDemo.UiTests
 
             page.Press_Button("Save");
 
-            page.Message_FieldIsRequired("Email");
+            page.ErrorMessage("Email", "Required");
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи с масимальной длиной более 30 символов в поле Имя")]
+        public void Fail_Create_LongFirstName()
+        {
+
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи с масимальной длиной более 30 символов в поле Фамилия")]
+        public void Fail_Create_LongLastName()
+        {
+
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи с масимальной длиной более 30 символов в поле Отчество")]
+        public void Fail_Create_LongMiddleName()
+        {
+
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи с не валидным эмейлом")]
+        public void Fail_Create_WrongEmail()
+        {
+
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи с невалидным номером телефона")]
+        public void Fail_Create_WrongContactNumber()
+        {
+
+        }
+
+        [Order(1)]
+        [TestCase(Description = "Добавление записи с невалидной датой")]
+        public void Fail_Create_WrongDateFormat()
+        {
+
         }
 
         #endregion

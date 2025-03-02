@@ -44,21 +44,21 @@ namespace OrangeDemo.UiElemenets
             }
         }
 
-        public void Message_FieldIsRequired(string fieldName) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
+        public void ErrorMessage(string fieldName, string message) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
         {
             string xpath;
-            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']")).Count > 0;
+            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count > 0;
 
             if (hasNotLabel)
             {
-                 xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']"; 
+                 xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; 
             }
             else 
             {
-                 xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='Required']";
+                 xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']";
             }
 
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); // Ожидание элемента 10 секунд
 
             IWebElement errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); // Обращаемся к элементу errorMessage по нашему xpath
 
