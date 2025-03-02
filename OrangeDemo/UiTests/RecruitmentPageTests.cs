@@ -10,22 +10,14 @@ namespace OrangeDemo.UiTests
     public class RecruitmentPageTests : RecruitmentPage
     {
         string email = "test" + Utilities.GenerateNumbers(2) + "@test.com";
+        string FirstName = "AvtoTest" + Utilities.GenerateLetter(3);
+        string LastName = "AvtoTest" + Utilities.GenerateLetter(3);
 
         [Order(0)]
         [TestCase(Description = "Добавление соискателя")]
         public void Create_Recruitment()
         {
-            page.OpenPage("dashboard/index");
-
-            page.SelectMenu("Recruitment");
-
-            page.Press_Button("Add");
-
-            page.Fill_Field("First Name", "Avtotest " + Utilities.GenerateLetter(3));
-
-            page.Fill_Field("Last Name", "Avtotest " + Utilities.GenerateLetter(3));
-
-            page.Fill_FieldByLabel("Email", email);
+            CreateRecruitment(FirstName, LastName, email);
 
             page.Press_Button("Save");
 
@@ -38,13 +30,7 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Имя")]
         public void Fail_Create_WithoutFirstName()
         {
-            page.OpenPage("recruitment/viewCandidates");
-
-            page.Press_Button("Add");
-
-            page.Fill_Field("Last Name", "Avtotest " + Utilities.GenerateLetter(3));
-
-            page.Fill_FieldByLabel("Email", email);
+            CreateRecruitment(FirstName = " ", LastName, email);
 
             page.Press_Button("Save");
 
@@ -55,13 +41,7 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Фамилия")]
         public void Fail_Create_WithoutLastName()
         {
-            page.OpenPage("recruitment/viewCandidates");
-
-            page.Press_Button("Add");
-
-            page.Fill_Field("First Name", "Avtotest " + Utilities.GenerateLetter(3));
-
-            page.Fill_FieldByLabel("Email", email);
+            CreateRecruitment(FirstName, LastName = " ", email);
 
             page.Press_Button("Save");
 
@@ -72,13 +52,7 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Email")]
         public void Fail_Create_WithoutEmail()
         {
-            page.OpenPage("recruitment/viewCandidates");
-
-            page.Press_Button("Add");
-
-            page.Fill_Field("First Name", "Avtotest " + Utilities.GenerateLetter(3));
-
-            page.Fill_Field("Last Name", "Avtotest " + Utilities.GenerateLetter(3));
+            CreateRecruitment(FirstName, LastName, email = " ");
 
             page.Press_Button("Save");
 

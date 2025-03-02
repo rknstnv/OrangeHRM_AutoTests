@@ -15,11 +15,5 @@ namespace OrangeDemo.Pages
         {
             page = new WebPage();
         }
-
-     //   [TearDown]
-     //   public void CloseBrowser()
-     //   {
-     //       Quiet();
-     //   }
     }
 }

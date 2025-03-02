@@ -42,5 +42,21 @@ namespace OrangeDemo.Pages
                 Console.WriteLine("Пользователь уже авторизован.");
             }
         }
+
+        public void CreateRecruitment(string firstName, string lastName, string Email)
+        {
+            page.OpenPage("dashboard/index");
+
+            page.SelectMenu("Recruitment");
+
+            page.Press_Button("Add");
+
+            page.Fill_Field("First Name", firstName);
+
+            page.Fill_Field("Last Name", lastName);
+
+            page.Fill_FieldByLabel("Email", Email);
+        }
+
     }
 }

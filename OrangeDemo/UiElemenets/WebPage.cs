@@ -47,9 +47,9 @@ namespace OrangeDemo.UiElemenets
         public void Message_FieldIsRequired(string fieldName) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
         {
             string xpath;
-            bool hasPlaceholder = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']")).Count > 0;
+            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']")).Count > 0;
 
-            if (hasPlaceholder)
+            if (hasNotLabel)
             {
                  xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']"; 
             }
