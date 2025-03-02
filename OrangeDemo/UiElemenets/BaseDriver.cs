@@ -29,16 +29,22 @@ namespace OrangeDemo.UiElemenets
                return new ChromeDriver(options);
            }
 
+        [OneTimeTearDown]
         public void Quiet()
         {
             driver.Quit();
             driver = null;
         }
-
         public void Dispose()
         {
             Quiet();
         }
+
+        //   public void Quiet()
+        //   {
+        //       driver.Quit();
+        //       driver = null;
+        //   }
 
         public void GoToUrl()
         {

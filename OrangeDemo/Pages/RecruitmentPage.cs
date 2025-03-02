@@ -19,12 +19,6 @@ namespace OrangeDemo.Pages
             EnsureLoggedIn();
         }
 
-        [TearDown]
-        public void CloseBrowser()
-        {
-            Quiet();
-        }
-
         private void EnsureLoggedIn()
         {
             GoToUrl();
