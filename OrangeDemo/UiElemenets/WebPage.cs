@@ -46,9 +46,21 @@ namespace OrangeDemo.UiElemenets
 
         public void Message_FieldIsRequired(string fieldName) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
         {
-            string xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']"; // Указываем наш путь
+            string xpath;
+            bool hasPlaceholder = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']")).Count > 0;
 
-            IWebElement errorMessage = driver.FindElement(By.XPath(xpath)); // Обращаемся к элементу errorMessage по нашему xpath
+            if (hasPlaceholder)
+            {
+                 xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='Required']"; 
+            }
+            else 
+            {
+                 xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='Required']";
+            }
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            IWebElement errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); // Обращаемся к элементу errorMessage по нашему xpath
 
             Assert.IsTrue(errorMessage.Displayed); // Проверка, что наша ошибка отображается
         }
