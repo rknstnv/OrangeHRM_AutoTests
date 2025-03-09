@@ -49,13 +49,13 @@ namespace OrangeDemo.UiElemenets
             string xpath;
             bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count > 0;
 
-            if (hasNotLabel)
+            if (hasNotLabel) // Проверяем два разных пути
             {
-                 xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; 
+                 xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; // Тут поле где наименование внутри поля
             }
             else 
             {
-                 xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']";
+                 xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']"; // Тут путь, где наименование над полем
             }
 
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); // Ожидание элемента 10 секунд
