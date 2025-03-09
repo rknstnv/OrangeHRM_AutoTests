@@ -42,7 +42,7 @@ namespace OrangeDemo.Pages
             }
         }
 
-        public void CreateRecruitment(string firstName, string lastName, string Email, string middleName = null, string contanctNumber = null, string date = null, string notes = null)
+        public void CreateRecruitment(string firstName, string lastName, string Email, string middleName = null, string contactNumber = null, string date = null, string notes = null)
         {
             page.OpenPage("dashboard/index");
 
@@ -56,11 +56,25 @@ namespace OrangeDemo.Pages
 
             page.Fill_FieldByLabel("Email", Email);
 
-            if(middleName)
-            {
-                page.Fill_Field("Middle Name", middleName);
-            }
-        }
+          //  if(string.IsNullOrEampty(middleName))
+          //  {
+          //      page.Fill_Field("Middle Name", middleName);
+          //  }
+            
+            // if(string.IsNullOrEampty(contactNumber))
+            // {
+            //   page.Fill_Field("Contact Number", contactNumber);
+            // }
+            
+            // if(string.IsNullOrEampty(date))
+            // {
+            //   page.Fill_Field("Data", date);
+            // }
 
+            // if(string.IsNullOrEampty(notes))
+            // {
+            //   page.Fill_Field("Notes", notes);
+            // }
+        }
     }
 }
