@@ -60,6 +60,11 @@ namespace OrangeDemo.Pages
             {
                 page.Fill_Field("Middle Name", middleName);
             }
+            // if(string.IsNullOrEampty(middleName))
+            // {
+            //   page.Fill_Field("Middle Name", middleName);
+            // }
+            // Ну и по аналогии для других необязательных полей, не забыть добавить одну запись с заполнением всех полей
         }
 
     }
