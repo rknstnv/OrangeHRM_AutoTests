@@ -1,4 +1,5 @@
-﻿using OrangeDemo.Pages;
+﻿using OpenQA.Selenium.BiDi.Modules.BrowsingContext;
+using OrangeDemo.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,17 +8,23 @@ using System.Threading.Tasks;
 
 namespace OrangeDemo.UiTests
 {
-    public class RecruitmentPageTests : RecruitmentPage
+    public class RecruitmentPageTests : Support
     {
         string email = "test" + Utilities.GenerateNumbers(2) + "@test.com";
         string FirstName = "AvtoTest" + Utilities.GenerateLetter(3);
         string LastName = "AvtoTest" + Utilities.GenerateLetter(3);
+        private RecruitmentPage page;
 
+        public override void SetUp()
+        {
+            base.SetUp();
+            page = new RecruitmentPage(Driver);
+        }
         [Order(0)]
         [TestCase(Description = "Добавление соискателя")]
         public void Create_Recruitment()
         {
-            CreateRecruitment(FirstName, LastName, email);
+            page.CreateRecruitment(FirstName, LastName, email);
 
             page.Press_Button("Save");
 
@@ -30,7 +37,7 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Имя")]
         public void Fail_Create_WithoutFirstName()
         {
-            CreateRecruitment(FirstName = " ", LastName, email);
+            page.CreateRecruitment(FirstName = " ", LastName, email);
 
             page.Press_Button("Save");
 
@@ -41,7 +48,7 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Фамилия")]
         public void Fail_Create_WithoutLastName()
         {
-            CreateRecruitment(FirstName, LastName = " ", email);
+            page.CreateRecruitment(FirstName, LastName = " ", email);
 
             page.Press_Button("Save");
 
@@ -52,7 +59,7 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Email")]
         public void Fail_Create_WithoutEmail()
         {
-            CreateRecruitment(FirstName, LastName, email = " ");
+            page.CreateRecruitment(FirstName, LastName, email = " ");
 
             page.Press_Button("Save");
 

@@ -9,8 +9,16 @@ using System.Threading.Tasks;
 
 namespace OrangeDemo.UiTests
 {
-    public class LoginFormPage : LoginPage
+    public class LoginFormPage : Support
     {
+        public LoginPage page;
+
+        public override void SetUp()
+        {
+            base.SetUp();
+            page = new LoginPage(Driver);
+        }
+
         [Order(0)]
         [TestCase(Description = "Логин")]
         public void OpenLoginPage()

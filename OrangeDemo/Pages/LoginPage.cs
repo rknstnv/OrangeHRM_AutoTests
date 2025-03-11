@@ -7,13 +7,8 @@ using System.Threading.Tasks;
 
 namespace OrangeDemo.Pages
 {
-    public class LoginPage : BaseDriver
+    public class LoginPage : WebPage
     {
-        public WebPage page;
-
-        public LoginPage()
-        {
-            page = new WebPage();
-        }
+        public LoginPage(BaseDriver driver) : base("auth/login", driver) { }
     }
 }
