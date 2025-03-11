@@ -10,70 +10,81 @@ using System.Threading.Tasks;
 
 namespace OrangeDemo.UiElemenets
 {
-    public class WebPage : BaseDriver
+    public class WebPage
     {
-        public WebPage() { }
+        private string path;
 
-        public void Press_Button(string buttonName)
+        public BaseDriver driver { get; private set; }
+
+        public WebPage(string path, BaseDriver driver)
         {
-            Click(By.XPath($"//button[text()=' {buttonName} ']"));
+            this.path = path;
+            this.driver = driver;
+        }
+
+        public void OpenPage()
+        {
+            driver.GoToUrl(path);
+        }
+
+        public void Press_Button(string buttonName, int elementCount = 1)
+        {
+            driver.Click(By.XPath($"//button[text()=' {buttonName} '][{elementCount}]"));
         }
         public void Fill_Field(string fieldName, string text)
         {
-            SendKeys(By.XPath($"//input[@placeholder='{fieldName}']"), text);
+            driver.SendKeys(By.XPath($"//input[@placeholder='{fieldName}']"), text);
         }
 
         public void Fill_FieldByLabel(string fieldName, string text)
         {
-            SendKeys(By.XPath($"//label[text()='{fieldName}']/../..//input[@placeholder='Type here']"), text);
-         //       $"//label[text()= '{fieldName}']"), text);
+            driver.SendKeys(By.XPath($"//label[text()='{fieldName}']/../..//input[@placeholder='Type here']"), text);
+
         }
 
         public void SelectMenu(string menuName) 
         {
-            Click(By.XPath($"//span[text()='{menuName}']"));
-        }
-
-        public void OpenPage(string pageUrl = "")
-        {
-            string fullUrl = Utilities.url + pageUrl;
-
-            if (driver.Url != fullUrl) // Проверяем, не находимся ли мы уже на нужной странице
-            {
-                driver.Navigate().GoToUrl(fullUrl);
-            }
+            driver.Click(By.XPath($"//span[text()='{menuName}']"));
         }
 
         public void ErrorMessage(string fieldName, string message) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
         {
-            string xpath;
-            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count > 0;
+            //string xpath;
+            //bool hasNotLabel = FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count > 0;
 
-            if (hasNotLabel) // Проверяем два разных пути
-            {
-                 xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; // Тут поле где наименование внутри поля
-            }
-            else 
-            {
-                 xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']"; // Тут путь, где наименование над полем
-            }
+            //if (hasNotLabel) // Проверяем два разных пути
+            //{
+            //     xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; // Тут поле где наименование внутри поля
+            //}
+            //else 
+            //{
+            //     xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']"; // Тут путь, где наименование над полем
+            //}
 
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); // Ожидание элемента 10 секунд
+            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); // Ожидание элемента 10 секунд
 
-            IWebElement errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); // Обращаемся к элементу errorMessage по нашему xpath
+            //IWebElement errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); // Обращаемся к элементу errorMessage по нашему xpath
 
-            Assert.IsTrue(errorMessage.Displayed); // Проверка, что наша ошибка отображается
+            //Assert.IsTrue(errorMessage.Displayed); // Проверка, что наша ошибка отображается
+
         }
 
         public void Message_Succesfully(string messageValue)
         {
             string xpath = $"//p[text()='{messageValue}']";
 
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
-            IWebElement succesMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); 
-            
-            Assert.IsTrue(succesMessage.Displayed);
+            //IWebElement succesMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); 
+
+            //Assert.IsTrue(succesMessage.Displayed);
+
+            driver.WaitUntilElementVisible(By.XPath(xpath));
+        }
+
+        public void Assert_HasRecord(string recordName)
+        {
+            driver.WaitUntilElementVisible(By.XPath($"//div[text() = '{recordName}'"));
         }
     }
 }

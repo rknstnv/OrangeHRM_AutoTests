@@ -6,92 +6,155 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 namespace OrangeDemo.UiElemenets
 {
     public class BaseDriver
     {
-        protected static IWebDriver driver;
+        protected IWebDriver driver;
 
         public BaseDriver()
         {
-            if (driver == null)
-            {
-                driver = StartBrowser();
-            }     
+            driver = StartBrowser();
         }
 
-           private WebDriver StartBrowser()
-           {
-               ChromeOptions options = new ChromeOptions();
-               options.AddArgument("start-maximized");
-               options.AddArguments("--incognito");
-               return new ChromeDriver(options);
-           }
+        private WebDriver StartBrowser()
+        {
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("start-maximized");
+            options.AddArguments("--incognito");
 
-        [OneTimeTearDown]
+            return new ChromeDriver(options);
+        }
+
         public void Quiet()
         {
             driver.Quit();
-            driver = null;
-        }
-        public void Dispose()
-        {
-            Quiet();
         }
 
-        //   public void Quiet()
-        //   {
-        //       driver.Quit();
-        //       driver = null;
-        //   }
-
-        public void GoToUrl()
+        public void GoToUrl(string url)
         {
-            driver.Url = Utilities.url;
+            driver.Url = Utilities.url + url;
             driver.Navigate().Refresh();
+        }
+
+        //public void Click(By locator)
+        //{
+        //    try
+        //    {
+        //        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+
+        //        wait.Until(e => e.FindElement(locator));
+
+        //        IWebElement elementToClick = driver.FindElement(locator);
+
+        //        elementToClick.Click();
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        throw new Exception($"{locator} не кликабелен");
+        //    }
+        //}
+        //public void SendKeys(By locator, string text, bool pressEnter = false) // Нажатие Enter, по умолчанию - Нет
+
+        //{
+        //    try 
+        //    {
+        //        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+
+        //        wait.Until(e => e.FindElement(locator));
+
+        //        IWebElement elementToClick = driver.FindElement(locator);
+
+        //        elementToClick.SendKeys(text);
+
+        //        if (pressEnter)
+        //            elementToClick.SendKeys(Keys.Enter);
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        throw new Exception($"{locator} ");
+        //    }
+        //}
+        //public string GetElementText(By locator)
+        //{
+        //    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+
+        //    wait.Until(e => e.FindElement(locator));
+
+        //    IWebElement elementToClick = driver.FindElement(locator);
+
+        //    string text = elementToClick.Text;
+
+        //    return text;
+        //}
+        //public void WaitForElement(By locator, int timeout = 10)
+        //{
+        //    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
+        //    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator));
+        //}
+
+        public void WaitUntilElementVisible(By locator, TimeSpan timeSpan = default)
+        {
+            try
+            {
+                if (timeSpan == default)
+                    timeSpan = TimeSpan.FromSeconds(10);
+
+                WebDriverWait wait = new WebDriverWait(driver, timeSpan);
+                wait.Until(ExpectedConditions.ElementIsVisible(locator));
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{locator} не видно на странице");
+            }
+
+        }
+
+        public void WaitUntilElementClicable(By locator, TimeSpan timeSpan = default)
+        {
+            try
+            {
+                if (timeSpan == default)
+                    timeSpan = TimeSpan.FromSeconds(10);
+
+                WebDriverWait wait = new WebDriverWait(driver, timeSpan);
+                wait.Until(ExpectedConditions.ElementToBeClickable(locator));
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{locator} не кликабелен");
+            }
+
+        }
+
+        public IWebElement GetElement(By locator)
+        {
+            WaitUntilElementVisible(locator);
+
+            return driver.FindElement(locator);
         }
 
         public void Click(By locator)
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            IWebElement elementToClick = GetElement(locator);
 
-            wait.Until(e => e.FindElement(locator));
-
-            IWebElement elementToClick = driver.FindElement(locator);
+            WaitUntilElementClicable(locator);
 
             elementToClick.Click();
         }
-        public void SendKeys(By locator, string text, bool pressEnter = false) // Нажатие Enter, по умолчанию - Нет
 
+        public void SendKeys(By locator, string value, bool pressEnter = false)
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            IWebElement elementToSendKey = GetElement(locator);
 
-            wait.Until(e => e.FindElement(locator));
+            WaitUntilElementClicable(locator);
 
-            IWebElement elementToClick = driver.FindElement(locator);
-
-            elementToClick.SendKeys(text);
+            elementToSendKey.SendKeys(value);
 
             if (pressEnter)
-                elementToClick.SendKeys(Keys.Enter); 
-        }
-        public string GetElementText(By locator)
-        {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
-
-            wait.Until(e => e.FindElement(locator));
-
-            IWebElement elementToClick = driver.FindElement(locator);
-
-            string text = elementToClick.Text;
-
-            return text;
-        }
-        public void WaitForElement(By locator, int timeout = 10)
-        {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator));
+                elementToSendKey.SendKeys(Keys.Enter);
         }
     }
 }
