@@ -56,8 +56,8 @@ namespace OrangeDemo.UiElemenets
         //        throw new Exception($"{locator} не кликабелен");
         //    }
         //}
-        //public void SendKeys(By locator, string text, bool pressEnter = false) // Нажатие Enter, по умолчанию - Нет
 
+        //public void SendKeys(By locator, string text, bool pressEnter = false) // Нажатие Enter, по умолчанию - Нет
         //{
         //    try 
         //    {
@@ -77,6 +77,7 @@ namespace OrangeDemo.UiElemenets
         //        throw new Exception($"{locator} ");
         //    }
         //}
+
         //public string GetElementText(By locator)
         //{
         //    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
@@ -89,6 +90,7 @@ namespace OrangeDemo.UiElemenets
 
         //    return text;
         //}
+
         //public void WaitForElement(By locator, int timeout = 10)
         //{
         //    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
