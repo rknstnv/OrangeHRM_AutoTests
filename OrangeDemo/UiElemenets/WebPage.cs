@@ -50,7 +50,7 @@ namespace OrangeDemo.UiElemenets
         public void ErrorMessage(string fieldName, string message) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
         {
             string xpath;
-            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count > 0;
+            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"));
 
             if (hasNotLabel) // Проверяем два разных пути
             {

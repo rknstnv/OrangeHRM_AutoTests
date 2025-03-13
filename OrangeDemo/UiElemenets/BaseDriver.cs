@@ -158,5 +158,10 @@ namespace OrangeDemo.UiElemenets
             if (pressEnter)
                 elementToSendKey.SendKeys(Keys.Enter);
         }
+
+        public void FindElements(By locator)
+        {
+            WaitUntilElementVisible(locator);
+        }
     }
 }
