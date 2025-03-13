@@ -49,23 +49,29 @@ namespace OrangeDemo.UiElemenets
 
         public void ErrorMessage(string fieldName, string message) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
         {
-            string xpath;
-            //   bool hasNotLabel = driver.GetElement(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")) !=null; // Без null будет ошибка, проверяем, что объект не null
-            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count>0;
-            if (hasNotLabel) // Проверяем два разных пути
-            {
-                xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; // Тут поле где наименование внутри поля
-            }
-            else
-            {
-                xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']"; // Тут путь, где наименование над полем
-            }
-      
-            driver.WaitUntilElementVisible(By.XPath(xpath)); // Метод ожидания отображения
+            string xpath1 = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']";
+            string xpath2 = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']";
 
-            IWebElement errorMessage = driver.GetElement(By.XPath(xpath)); // Обращаемся к элементу errorMessage по нашему xpath
+            bool hasNotLabel = driver.driver.FindElements(By.XPath(xpath1)).Count > 0; // Убеждаемся, что отображается элемент
 
-            Assert.IsTrue(errorMessage.Displayed); // Проверка, что наша ошибка отображается
+            string finalXpath = hasNotLabel ? xpath1 : xpath2; // Тернарный оператор
+
+            driver.WaitUntilElementVisible(By.XPath(finalXpath)); // Метод ожидания отображения
+
+            IWebElement errorMessage = driver.GetElement(By.XPath(finalXpath)); // Обращаемся к элементу errorMessage по нашему finalXpath
+
+            Assert.IsTrue(errorMessage.Displayed);
+
+            //bool hasNotLabel = driver.GetElement(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")) !=null; // Без null будет ошибка, проверяем, что объект не null
+            //bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count>0;
+            //if (hasNotLabel) // Проверяем два разных пути
+            //{
+            //    xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; // Тут поле где наименование внутри поля
+            //}
+            //else
+            //{
+            //    xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']"; // Тут путь, где наименование над полем
+            //}
             // Поменять на тернарный оператор, добавить два xpath для проверки вверху и один общий finalXpath
         }
 

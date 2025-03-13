@@ -12,7 +12,7 @@ namespace OrangeDemo.UiElemenets
 {
     public class BaseDriver
     {
-        protected IWebDriver driver;
+        public IWebDriver driver;
 
         public BaseDriver()
         {
@@ -167,16 +167,3 @@ namespace OrangeDemo.UiElemenets
         }
     }
 }
-//А почему вместо этого public IReadOnlyCollection<IWebElement> FindElements(By locator)
-//{
-//    return driver.FindElements(locator);
-//}
-
-//не использовать
-
-//public IWebElement FindElements(By locator)
-//{
-//    WaitUntilElementVisible(locator);
-
-//    return driver.FindElement(locator);
-//}
