@@ -20,11 +20,12 @@ namespace OrangeDemo.UiTests
             base.SetUp();
             page = new RecruitmentPage(Driver);
         }
+
         [Order(0)]
         [TestCase(Description = "Добавление соискателя")]
         public void Create_Recruitment()
         {
-            page.CreateRecruitment(FirstName, LastName, email);
+            page.CreateRecruitment(FirstName, LastName, email, middleName:Utilities.GenerateLetter(5), contactNumber:Utilities.GenerateNumbers(11), notes:Utilities.GenerateLetter(10));
 
             page.Press_Button("Save");
 
@@ -109,5 +110,6 @@ namespace OrangeDemo.UiTests
         }
 
         #endregion
+
     }
 }

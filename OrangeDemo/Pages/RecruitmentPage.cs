@@ -25,16 +25,19 @@ namespace OrangeDemo.Pages
 
             Fill_Field("Last Name", lastName);
 
-            Fill_FieldByLabel("Email", Email);
+         //   Fill_FieldByLabel("Email", Email);
 
-            if(!string.IsNullOrEmpty(middleName))
+            Fill_Field("Email", Email);
+
+            if (!string.IsNullOrEmpty(middleName))
             {
                 Fill_Field("Middle Name", middleName);
             }
             
             if(!string.IsNullOrEmpty(contactNumber))
             {
-               Fill_Field("Contact Number", contactNumber);
+             //  Fill_FieldByLabel("Contact Number", contactNumber);
+                Fill_Field("Contact Number", contactNumber);
             }
             
             if(!string.IsNullOrEmpty(date))
@@ -44,7 +47,8 @@ namespace OrangeDemo.Pages
 
             if(!string.IsNullOrEmpty(notes))
             {
-               Fill_Field("Notes", notes);
+             //  Fill_FieldByLabel("Notes", notes);
+                Fill_Field("Notes", notes);
             }
         }
     }
