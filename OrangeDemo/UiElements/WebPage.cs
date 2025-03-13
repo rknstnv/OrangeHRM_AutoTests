@@ -51,7 +51,7 @@ namespace OrangeDemo.UiElemenets
         {
             string xpath1 = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']";
             string xpath2 = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']";
-
+            // Почему через два драйвера? Потому что, мой метод нельзя преобразовать в bool, поэтому перетянул базовый метод
             bool hasNotLabel = driver.driver.FindElements(By.XPath(xpath1)).Count > 0; // Убеждаемся, что отображается элемент
 
             string finalXpath = hasNotLabel ? xpath1 : xpath2; // Тернарный оператор

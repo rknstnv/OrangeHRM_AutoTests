@@ -149,14 +149,21 @@ namespace OrangeDemo.UiElemenets
 
         public void SendKeys(By locator, string value, bool pressEnter = false)
         {
-            IWebElement elementToSendKey = GetElement(locator);
+            try
+            {
+                IWebElement elementToSendKey = GetElement(locator);
 
-            WaitUntilElementClicable(locator);
+                WaitUntilElementClicable(locator);
 
-            elementToSendKey.SendKeys(value);
+                elementToSendKey.SendKeys(value);
 
-            if (pressEnter)
-                elementToSendKey.SendKeys(Keys.Enter);
+                if (pressEnter)
+                    elementToSendKey.SendKeys(Keys.Enter);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception($"{locator} нет возможности заполнить");
+            }
         }
 
         public IWebElement FindElements(By locator)
