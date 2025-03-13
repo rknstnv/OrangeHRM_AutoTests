@@ -50,8 +50,8 @@ namespace OrangeDemo.UiElemenets
         public void ErrorMessage(string fieldName, string message) // Проверка, что в поле вышло сообщение о том, что оно не заполнено
         {
             string xpath;
-            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"));
-
+            //   bool hasNotLabel = driver.GetElement(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")) !=null; // Без null будет ошибка, проверяем, что объект не null
+            bool hasNotLabel = driver.FindElements(By.XPath($"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']")).Count>0;
             if (hasNotLabel) // Проверяем два разных пути
             {
                 xpath = $"//input[@placeholder= '{fieldName}']/../..//span[text()='{message}']"; // Тут поле где наименование внутри поля
@@ -60,13 +60,13 @@ namespace OrangeDemo.UiElemenets
             {
                 xpath = $"//label[text()= '{fieldName}']/../..//input[@placeholder='Type here']/../..//span[text()='{message}']"; // Тут путь, где наименование над полем
             }
+      
+            driver.WaitUntilElementVisible(By.XPath(xpath)); // Метод ожидания отображения
 
-            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); // Ожидание элемента 10 секунд
+            IWebElement errorMessage = driver.GetElement(By.XPath(xpath)); // Обращаемся к элементу errorMessage по нашему xpath
 
-            //IWebElement errorMessage = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(xpath))); // Обращаемся к элементу errorMessage по нашему xpath
-
-            //Assert.IsTrue(errorMessage.Displayed); // Проверка, что наша ошибка отображается
-
+            Assert.IsTrue(errorMessage.Displayed); // Проверка, что наша ошибка отображается
+            // Поменять на тернарный оператор, добавить два xpath для проверки вверху и один общий finalXpath
         }
 
         public void Message_Succesfully(string messageValue)

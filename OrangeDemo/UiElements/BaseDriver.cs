@@ -159,9 +159,24 @@ namespace OrangeDemo.UiElemenets
                 elementToSendKey.SendKeys(Keys.Enter);
         }
 
-        public void FindElements(By locator)
+        public IWebElement FindElements(By locator)
         {
             WaitUntilElementVisible(locator);
+
+            return driver.FindElement(locator);
         }
     }
 }
+//А почему вместо этого public IReadOnlyCollection<IWebElement> FindElements(By locator)
+//{
+//    return driver.FindElements(locator);
+//}
+
+//не использовать
+
+//public IWebElement FindElements(By locator)
+//{
+//    WaitUntilElementVisible(locator);
+
+//    return driver.FindElement(locator);
+//}

@@ -37,10 +37,10 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Имя")]
         public void Fail_Create_WithoutFirstName()
         {
-            page.CreateRecruitment(FirstName = " ", LastName, email);
+            page.CreateRecruitment(" ", LastName, email);
 
             page.Press_Button("Save");
-
+            Thread.Sleep(5000);
             page.ErrorMessage("First Name", "Required");
         }
 
@@ -48,10 +48,10 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Фамилия")]
         public void Fail_Create_WithoutLastName()
         {
-            page.CreateRecruitment(FirstName, LastName = " ", email);
+            page.CreateRecruitment(FirstName, " ", email);
 
             page.Press_Button("Save");
-
+            Thread.Sleep(5000);
             page.ErrorMessage("Last Name", "Required");
         }
 
@@ -59,10 +59,10 @@ namespace OrangeDemo.UiTests
         [TestCase(Description = "Добавление записи без заполнения поля Email")]
         public void Fail_Create_WithoutEmail()
         {
-            page.CreateRecruitment(FirstName, LastName, email = " ");
+            page.CreateRecruitment(FirstName, LastName, " ");
 
             page.Press_Button("Save");
-
+            Thread.Sleep(5000);
             page.ErrorMessage("Email", "Required");
         }
 
