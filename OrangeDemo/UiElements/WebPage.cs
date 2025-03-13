@@ -35,6 +35,8 @@ namespace OrangeDemo.UiElemenets
         {
             //driver.SendKeys(By.XPath($"//input[@placeholder='{fieldName}']"), text); // 1 вариант
 
+
+
             //string xpath1 = $"//input[@placeholder='{fieldName}']"; // 2 вариант
             //string xpath2 = $"//label[text()='{fieldName}']/../..//input";
             //string xpath3 = $"//label[text()='{fieldName}']/../..//textarea";
@@ -43,23 +45,52 @@ namespace OrangeDemo.UiElemenets
             //string finalXpath = hasLabel ? xpath1 : xpath2;
             //driver.SendKeys(By.XPath(finalXpath), text);
 
-            string xpath; // 3 вариант
-            bool hasNotLabel = driver.driver.FindElements(By.XPath($"//input[@placeholder='{fieldName}']")).Count > 0;
 
-            if (hasNotLabel)
-            {
-                xpath = $"//input[@placeholder='{fieldName}']";
-            }
-            else if(!hasNotLabel)
-            {
-                xpath = $"//label[text()='{fieldName}']/../..//input";
-            }
-            else
-            {
-                xpath = $"//label[text()='{fieldName}']/../..//textarea";
-            }
 
-            driver.SendKeys(By.XPath(xpath), text); // Ты не поверишь, как и во втором варианте - эта дура смотрит только 2 вариант
+            //string xpath; // 3 вариант
+            //bool hasNotLabel = driver.driver.FindElements(By.XPath($"//input[@placeholder='{fieldName}']")).Count > 0;
+
+            //if (hasNotLabel)
+            //{
+            //    xpath = $"//input[@placeholder='{fieldName}']";
+            //}
+            //else if(!hasNotLabel)
+            //{
+            //    xpath = $"//label[text()='{fieldName}']/../..//input";
+            //}
+            //else
+            //{
+            //    xpath = $"//label[text()='{fieldName}']/../..//textarea";
+            //}
+
+            //driver.SendKeys(By.XPath(xpath), text); // Ты не поверишь, как и во втором варианте - эта дура смотрит только 2 вариант
+
+
+
+            //string xpath1 = $"//input[@placeholder='{fieldName}']"; // 4 вариант
+            //string xpath2 = $"//label[text()='{fieldName}']/../..//input";
+            //string xpath3 = $"//label[text()='{fieldName}']/../..//textarea";
+
+            //string finalXpath;
+
+            //if (driver.driver.FindElements(By.XPath(xpath1)).Count > 0)
+            //{
+            //    finalXpath = xpath1;
+            //}
+            //else if (driver.driver.FindElements(By.XPath(xpath2)).Count > 0)
+            //{
+            //    finalXpath = xpath2;
+            //}
+            //else if (driver.driver.FindElements(By.XPath(xpath3)).Count > 0)
+            //{
+            //    finalXpath = xpath3;
+            //}
+            //else
+            //{
+            //    throw new Exception($" Поле '{fieldName}' не найдено!");
+            //}
+
+            //driver.SendKeys(By.XPath(finalXpath), text);
         }
 
         public void Fill_FieldByLabel(string fieldName, string text)
