@@ -33,11 +33,12 @@ namespace OrangeDemo.UiElemenets
         }
         public void Fill_Field(string fieldName, string text)
         {
-            //driver.SendKeys(By.XPath($"//input[@placeholder='{fieldName}']"), text); // 1 вариант
+            // 1 вариант
+            //driver.SendKeys(By.XPath($"//input[@placeholder='{fieldName}']"), text); 
 
 
-
-            //string xpath1 = $"//input[@placeholder='{fieldName}']"; // 2 вариант
+            // 2 вариант
+            //string xpath1 = $"//input[@placeholder='{fieldName}']"; 
             //string xpath2 = $"//label[text()='{fieldName}']/../..//input";
             //string xpath3 = $"//label[text()='{fieldName}']/../..//textarea";
             //bool hasLabel = driver.driver.FindElements(By.XPath(xpath1)).Count > 0;
@@ -46,8 +47,8 @@ namespace OrangeDemo.UiElemenets
             //driver.SendKeys(By.XPath(finalXpath), text);
 
 
-
-            //string xpath; // 3 вариант
+            // 3 вариант
+            //string xpath; 
             //bool hasNotLabel = driver.driver.FindElements(By.XPath($"//input[@placeholder='{fieldName}']")).Count > 0;
 
             //if (hasNotLabel)
@@ -66,8 +67,8 @@ namespace OrangeDemo.UiElemenets
             //driver.SendKeys(By.XPath(xpath), text); // Ты не поверишь, как и во втором варианте - эта дура смотрит только 2 вариант
 
 
-
-            //string xpath1 = $"//input[@placeholder='{fieldName}']"; // 4 вариант
+            // 4 вариант
+            //string xpath1 = $"//input[@placeholder='{fieldName}']"; 
             //string xpath2 = $"//label[text()='{fieldName}']/../..//input";
             //string xpath3 = $"//label[text()='{fieldName}']/../..//textarea";
 
