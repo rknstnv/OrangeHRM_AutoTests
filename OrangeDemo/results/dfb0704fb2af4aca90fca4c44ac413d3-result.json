@@ -1,0 +1,321 @@
+{
+  "uuid": "304c3e36-d84c-47c3-9860-2b7f83acd1d3-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_Recruitment()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Create_Recruitment()"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя\n",
+  "steps": [
+    {
+      "name": "Create_Recruitment()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336805970,
+          "stop": 1743336807621
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336807622,
+          "stop": 1743336809025
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336809025,
+          "stop": 1743336809980
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestCgt",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336809980,
+          "stop": 1743336810618
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestTKj",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336810618,
+          "stop": 1743336810700
+        },
+        {
+          "name": "Заполнение поля Email значением test39@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336810700,
+          "stop": 1743336810824
+        },
+        {
+          "name": "Заполнение поля Middle Name значением oeatd",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336810824,
+          "stop": 1743336810911
+        },
+        {
+          "name": "Выбор записи Senior QA Lead в выпадающем списке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336810911,
+          "stop": 1743336811044
+        },
+        {
+          "name": "Заполнение поля Contact Number значением 76133897508",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336811044,
+          "stop": 1743336811161
+        },
+        {
+          "name": "Заполнение поля Keywords значением RWAIP",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336811161,
+          "stop": 1743336811282
+        },
+        {
+          "name": "Заполнение поля Date of Application значением 2025-18-02",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336811282,
+          "stop": 1743336811458
+        },
+        {
+          "name": "Заполнение поля Notes значением pQjUQpEBIJ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336811459,
+          "stop": 1743336811563
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336811563,
+          "stop": 1743336811910
+        },
+        {
+          "name": "Успешно: Successfully Saved",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336811910,
+          "stop": 1743336812957
+        },
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336812957,
+          "stop": 1743336813709
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336813709,
+          "stop": 1743336814898
+        },
+        {
+          "name": "Проверка отображения элемента: AvtoTestCgt",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336819906,
+          "stop": 1743336819918
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "244beff45a8d4d4b95509f239e9960a6-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743336805969,
+      "stop": 1743336819922
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743336805969,
+  "stop": 1743336819924
+}

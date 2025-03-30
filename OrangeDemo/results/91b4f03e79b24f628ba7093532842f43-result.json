@@ -1,0 +1,131 @@
+{
+  "uuid": "70ec1148-7197-45fb-865c-cc8bb0c81656-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#12"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_Recruitment()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception :  Поле 'First Name' не найдено!",
+    "trace": "   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Fill_Field>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 102\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Fill_Field(String fieldName, String text) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 45\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String contactNumber, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 24\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 32\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя\n",
+  "steps": [
+    {
+      "name": "Create_Recruitment()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Exception :  Поле 'First Name' не найдено!",
+        "trace": "   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Fill_Field>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 102\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Fill_Field(String fieldName, String text) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 45\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String contactNumber, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 24\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 32\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742316196628,
+          "stop": 1742316198194
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742316198195,
+          "stop": 1742316199421
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742316199421,
+          "stop": 1742316200311
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestHjM",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": " Поле 'First Name' не найдено!",
+            "trace": "   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Fill_Field>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 102\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742316200311,
+          "stop": 1742316200361
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "856fb9fd8d09456ab09f43e934fbbbbf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1742316196626,
+      "stop": 1742316200370
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1742316196624,
+  "stop": 1742316200372
+}

@@ -1,0 +1,131 @@
+{
+  "uuid": "b746c0a2-1a9b-4ece-922e-6f1ad96db6a0-tr-0-1006",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Delete_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Delete_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#11"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Delete_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Delete_Recruitment()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : By.XPath: //button[text()='  Yes, Delete  '][1] не видно на странице",
+    "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Press_Button>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 46\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Press_Button(String buttonName, Int32 elementCount) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 44\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Delete_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 49\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Удаление соискателя\n",
+  "steps": [
+    {
+      "name": "Delete_Recruitment()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Exception : By.XPath: //button[text()='  Yes, Delete  '][1] не видно на странице",
+        "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Press_Button>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 46\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Press_Button(String buttonName, Int32 elementCount) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 44\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Delete_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 49\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742324110390,
+          "stop": 1742324110995
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742324110995,
+          "stop": 1742324112428
+        },
+        {
+          "name": "Нажатие на иконку удаления для записи AvtoTestYZe",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742324112428,
+          "stop": 1742324113515
+        },
+        {
+          "name": "Нажатие кнопки  Yes, Delete ",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "By.XPath: //button[text()='  Yes, Delete  '][1] не видно на странице",
+            "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Press_Button>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 46\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742324113515,
+          "stop": 1742324123782
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "24140821682b4334baf3ff1ba98f58cc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1742324110389,
+      "stop": 1742324123786
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1742324110389,
+  "stop": 1742324123786
+}

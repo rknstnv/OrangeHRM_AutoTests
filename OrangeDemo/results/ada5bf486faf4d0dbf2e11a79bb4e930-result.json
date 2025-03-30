@@ -1,0 +1,191 @@
+{
+  "uuid": "bc25bd4d-c2c8-4088-bf27-20efab7cd1d6-tr-0-1024",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongDateFormat()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongDateFormat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WrongDateFormat"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WrongDateFormat()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button data-v-10d463b7=\"\" data-v-235bef90=\"\" type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\">...</button> is not clickable at point (1401, 671). Other element would receive the click: <div class=\"oxd-calendar-date\">...</div>\n  (Session info: chrome=134.0.6998.178)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 165\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Press_Button>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 46\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Press_Button(String buttonName, Int32 elementCount) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 44\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongDateFormat() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 150\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с невалидной датой\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WrongDateFormat()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button data-v-10d463b7=\"\" data-v-235bef90=\"\" type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\">...</button> is not clickable at point (1401, 671). Other element would receive the click: <div class=\"oxd-calendar-date\">...</div>\n  (Session info: chrome=134.0.6998.178)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 165\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Press_Button>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 46\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Press_Button(String buttonName, Int32 elementCount) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 44\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongDateFormat() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 150\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331425197,
+          "stop": 1743331425813
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331425813,
+          "stop": 1743331427153
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331427153,
+          "stop": 1743331428043
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestqDE",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331428043,
+          "stop": 1743331428635
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestBdP",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331428635,
+          "stop": 1743331428706
+        },
+        {
+          "name": "Заполнение поля Email значением test07@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331428706,
+          "stop": 1743331428808
+        },
+        {
+          "name": "Заполнение поля Date of Application значением gpkOd",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331428808,
+          "stop": 1743331428918
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <button data-v-10d463b7=\"\" data-v-235bef90=\"\" type=\"submit\" class=\"oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\">...</button> is not clickable at point (1401, 671). Other element would receive the click: <div class=\"oxd-calendar-date\">...</div>\n  (Session info: chrome=134.0.6998.178)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.ExecuteAsync(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 165\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass8_0.<Press_Button>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 46\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331428918,
+          "stop": 1743331430025
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9e4bc179435840d2830dcfc3be6c381a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743331425196,
+      "stop": 1743331430028
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743331425196,
+  "stop": 1743331430028
+}

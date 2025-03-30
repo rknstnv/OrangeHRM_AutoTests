@@ -1,0 +1,326 @@
+{
+  "uuid": "6b20f6f3-3df2-49a5-8083-6d126f9f423c-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#12"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_Recruitment()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : By.XPath: //div[text() = 'AvtoTestBRg' не видно на странице",
+    "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass15_0.<Assert_HasRecord>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 256\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Assert_HasRecord(String recordName) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 254\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 42\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя\n",
+  "steps": [
+    {
+      "name": "Create_Recruitment()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Exception : By.XPath: //div[text() = 'AvtoTestBRg' не видно на странице",
+        "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass15_0.<Assert_HasRecord>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 256\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Assert_HasRecord(String recordName) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 254\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 42\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336513731,
+          "stop": 1743336515346
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336515346,
+          "stop": 1743336516681
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336516681,
+          "stop": 1743336517619
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestBRg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336517619,
+          "stop": 1743336518231
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestvWi",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336518231,
+          "stop": 1743336518318
+        },
+        {
+          "name": "Заполнение поля Email значением test52@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336518318,
+          "stop": 1743336518439
+        },
+        {
+          "name": "Заполнение поля Middle Name значением OiRpl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336518439,
+          "stop": 1743336518515
+        },
+        {
+          "name": "Выбор записи Senior QA Lead в выпадающем списке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336518516,
+          "stop": 1743336518644
+        },
+        {
+          "name": "Заполнение поля Contact Number значением 79010379875",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336518644,
+          "stop": 1743336518801
+        },
+        {
+          "name": "Заполнение поля Keywords значением oAmol",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336518801,
+          "stop": 1743336518912
+        },
+        {
+          "name": "Заполнение поля Date of Application значением 2025-18-02",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336518912,
+          "stop": 1743336519042
+        },
+        {
+          "name": "Заполнение поля Notes значением qxxDuzolBK",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336519042,
+          "stop": 1743336519144
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336519144,
+          "stop": 1743336519488
+        },
+        {
+          "name": "Успешно: Successfully Saved",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336519489,
+          "stop": 1743336520023
+        },
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336520023,
+          "stop": 1743336520679
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336520679,
+          "stop": 1743336522548
+        },
+        {
+          "name": "Проверка отображения элемента: AvtoTestBRg",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "By.XPath: //div[text() = 'AvtoTestBRg' не видно на странице",
+            "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass15_0.<Assert_HasRecord>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 256\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336527559,
+          "stop": 1743336527589
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "92b8739de976439ebc698d3a76d15e9b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743336513730,
+      "stop": 1743336527594
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743336513730,
+  "stop": 1743336527596
+}

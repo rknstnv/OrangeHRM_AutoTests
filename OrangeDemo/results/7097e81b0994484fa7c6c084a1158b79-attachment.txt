@@ -1,0 +1,7 @@
+[DEBUG] Проверяю XPath1: //input[@placeholder='First Name']
+[DEBUG] Количество найденных элементов XPath1: True
+[DEBUG] Выбран XPath: //input[@placeholder='First Name']
+[DEBUG] Проверяю XPath1: //input[@placeholder='Last Name']
+[DEBUG] Количество найденных элементов XPath1: True
+[DEBUG] Выбран XPath: //input[@placeholder='Last Name']
+[DEBUG] Проверяю XPath1: //input[@placeholder='Email']

@@ -1,0 +1,201 @@
+{
+  "uuid": "dd0f3f60-def4-43cf-b4e3-4e629dec1246-tr-0-1018",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongMiddleName()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongMiddleName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#11"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_LongMiddleName"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_LongMiddleName()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_LongMiddleName()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с масимальной длиной более 30 символов в поле Отчество\n",
+  "steps": [
+    {
+      "name": "Fail_Create_LongMiddleName()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333384769,
+          "stop": 1743333385383
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333385383,
+          "stop": 1743333386762
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333386762,
+          "stop": 1743333387697
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestsbB",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333387697,
+          "stop": 1743333388289
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestwlC",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333388289,
+          "stop": 1743333388368
+        },
+        {
+          "name": "Заполнение поля Email значением test78@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333388368,
+          "stop": 1743333388498
+        },
+        {
+          "name": "Заполнение поля Middle Name значением laidOXlxDPyNVksLDjHrHETqtQbHvIz",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333388498,
+          "stop": 1743333388636
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333388636,
+          "stop": 1743333388819
+        },
+        {
+          "name": "Отображение ошибки Should not exceed 30 characters в поле Middle Name",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743333388819,
+          "stop": 1743333388869
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "0869845135924de88599a9259a1c2d45-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743333384769,
+      "stop": 1743333388870
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743333384769,
+  "stop": 1743333388870
+}

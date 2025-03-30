@@ -1,0 +1,201 @@
+{
+  "uuid": "a297635e-b308-4a89-9316-fe0e9a669089-tr-0-1022",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongContactNumber()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongContactNumber()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WrongContactNumber"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WrongContactNumber()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_WrongContactNumber()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с невалидным номером телефона\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WrongContactNumber()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331430030,
+          "stop": 1743331430621
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331430621,
+          "stop": 1743331431730
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331431730,
+          "stop": 1743331432594
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestqDE",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331432594,
+          "stop": 1743331433180
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestBdP",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331433180,
+          "stop": 1743331433262
+        },
+        {
+          "name": "Заполнение поля Email значением test07@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331433262,
+          "stop": 1743331433365
+        },
+        {
+          "name": "Заполнение поля Contact Number значением MrPDd",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331433365,
+          "stop": 1743331433463
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331433463,
+          "stop": 1743331433514
+        },
+        {
+          "name": "Отображение ошибки Allows numbers and only + - / ( ) в поле Contact Number",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743331433514,
+          "stop": 1743331433550
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "bca1662291894117b9026ec7f243ad6b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743331430030,
+      "stop": 1743331433551
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743331430030,
+  "stop": 1743331433551
+}

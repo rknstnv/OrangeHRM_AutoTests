@@ -1,0 +1,246 @@
+{
+  "uuid": "8eee61ed-e8be-4985-bb17-0b1526ae82ca-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_Recruitment()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Create_Recruitment()"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя\n",
+  "steps": [
+    {
+      "name": "Create_Recruitment()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323380667,
+          "stop": 1742323383611
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323383612,
+          "stop": 1742323385861
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323385862,
+          "stop": 1742323387350
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestRIz",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323387350,
+          "stop": 1742323387969
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestmPN",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323387969,
+          "stop": 1742323388053
+        },
+        {
+          "name": "Заполнение поля Email значением test08@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323388053,
+          "stop": 1742323388141
+        },
+        {
+          "name": "Заполнение поля Middle Name значением fiejk",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323388141,
+          "stop": 1742323388219
+        },
+        {
+          "name": "Заполнение поля Contact Number значением 85525291481",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323388219,
+          "stop": 1742323388303
+        },
+        {
+          "name": "Заполнение поля Keywords значением GTJfG",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323388303,
+          "stop": 1742323388380
+        },
+        {
+          "name": "Заполнение поля Notes значением IZybVYYTRJ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323388380,
+          "stop": 1742323388457
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323388457,
+          "stop": 1742323388514
+        },
+        {
+          "name": "Успешно: Successfully Saved",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742323388514,
+          "stop": 1742323389034
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c64ab278b6dc4679b6ba6151566744dd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1742323380667,
+      "stop": 1742323389039
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1742323380666,
+  "stop": 1742323389041
+}

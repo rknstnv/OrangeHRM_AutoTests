@@ -1,0 +1,266 @@
+{
+  "uuid": "c095dff1-408a-494a-b21d-569ede54248a-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_Recruitment()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : By.XPath: //label[text()='Consent to keep data']/../..//input не видно на странице",
+    "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass18_0.<ActivateCheckbox>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 281\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.ActivateCheckbox(String checkboxName) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 279\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 34\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя\n",
+  "steps": [
+    {
+      "name": "Create_Recruitment()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Exception : By.XPath: //label[text()='Consent to keep data']/../..//input не видно на странице",
+        "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass18_0.<ActivateCheckbox>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 281\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.ActivateCheckbox(String checkboxName) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 279\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 34\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335035878,
+          "stop": 1743335037562
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335037562,
+          "stop": 1743335038931
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335038931,
+          "stop": 1743335039785
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestUDD",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335039786,
+          "stop": 1743335040401
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestGgG",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335040401,
+          "stop": 1743335040486
+        },
+        {
+          "name": "Заполнение поля Email значением test45@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335040487,
+          "stop": 1743335040605
+        },
+        {
+          "name": "Заполнение поля Middle Name значением AtJme",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335040605,
+          "stop": 1743335040689
+        },
+        {
+          "name": "Выбор записи Senior QA Lead в выпадающем списке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335040689,
+          "stop": 1743335040814
+        },
+        {
+          "name": "Заполнение поля Contact Number значением 95943521607",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335040814,
+          "stop": 1743335040927
+        },
+        {
+          "name": "Заполнение поля Keywords значением uZKaQ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335040927,
+          "stop": 1743335041080
+        },
+        {
+          "name": "Заполнение поля Date of Application значением 2025-18-02",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335041080,
+          "stop": 1743335041215
+        },
+        {
+          "name": "Заполнение поля Notes значением sEdynMFPec",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335041215,
+          "stop": 1743335041309
+        },
+        {
+          "name": "Установка флажка у поля чекбокса Consent to keep data",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "By.XPath: //label[text()='Consent to keep data']/../..//input не видно на странице",
+            "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass18_0.<ActivateCheckbox>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 281\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743335041309,
+          "stop": 1743335051653
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "cab3c235b0e14c9098c19eec8773babf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743335035876,
+      "stop": 1743335051660
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743335035874,
+  "stop": 1743335051662
+}

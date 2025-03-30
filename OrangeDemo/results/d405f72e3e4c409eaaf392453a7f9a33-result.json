@@ -1,0 +1,65 @@
+{
+  "uuid": "8e3db38c-725b-4e0d-9402-69b6caa87218-tr-0-1018",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongMiddleName()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongMiddleName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_LongMiddleName"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_LongMiddleName()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_LongMiddleName()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с масимальной длиной более 30 символов в поле Отчество\n",
+  "steps": [
+    {
+      "name": "Fail_Create_LongMiddleName()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "05fe91a2578c41c8b3a3d254cfc1fc6b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743328781708,
+      "stop": 1743328781708
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743328781708,
+  "stop": 1743328781708
+}

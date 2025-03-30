@@ -1,0 +1,176 @@
+{
+  "uuid": "0d7e9e41-e058-4a81-bb72-a612061d31b5-tr-0-1008",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WithoutFirstName()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WithoutFirstName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WithoutFirstName"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WithoutFirstName()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : By.XPath: //label[text()='Date of Application']/../..//input нет возможности заполнить",
+    "trace": "   at OrangeDemo.UiElemenets.BaseDriver.SendKeys(By locator, String value, Boolean pressEnter) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 183\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass10_0.<Fill_FieldByLabel>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 163\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Fill_FieldByLabel(String fieldName, String text) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 158\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String vacancy, String contactNumber, String keywords, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 52\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WithoutFirstName() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 60\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Добавление записи без заполнения поля Имя\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WithoutFirstName()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Exception : By.XPath: //label[text()='Date of Application']/../..//input нет возможности заполнить",
+        "trace": "   at OrangeDemo.UiElemenets.BaseDriver.SendKeys(By locator, String value, Boolean pressEnter) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 183\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass10_0.<Fill_FieldByLabel>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 163\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Fill_FieldByLabel(String fieldName, String text) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 158\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String vacancy, String contactNumber, String keywords, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 52\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WithoutFirstName() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 60\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743328579970,
+          "stop": 1743328580589
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743328580589,
+          "stop": 1743328581877
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743328581877,
+          "stop": 1743328582720
+        },
+        {
+          "name": "Заполнение поля First Name значением  ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743328582720,
+          "stop": 1743328583330
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestyOJ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743328583330,
+          "stop": 1743328583422
+        },
+        {
+          "name": "Заполнение поля Email значением test08@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743328583422,
+          "stop": 1743328583505
+        },
+        {
+          "name": "Заполнение поля Date of Application значением ",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "By.XPath: //label[text()='Date of Application']/../..//input нет возможности заполнить",
+            "trace": "   at OrangeDemo.UiElemenets.BaseDriver.SendKeys(By locator, String value, Boolean pressEnter) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 183\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass10_0.<Fill_FieldByLabel>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 163\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743328583505,
+          "stop": 1743328583559
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ed32b9cf70c74fe0a607b45922129a01-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743328579969,
+      "stop": 1743328583560
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743328579969,
+  "stop": 1743328583560
+}

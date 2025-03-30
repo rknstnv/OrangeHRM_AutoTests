@@ -1,0 +1,141 @@
+{
+  "uuid": "77b6f8f0-4b66-48de-9133-f044539df2f4-tr-0-1011",
+  "historyId": "OrangeDemo.UiTests.Recruitment.Candidates.CandidatesPageTests.Delete_Candidate()",
+  "fullName": "OrangeDemo.UiTests.Recruitment.Candidates.CandidatesPageTests.Delete_Candidate()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#11"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests.Recruitment.Candidates"
+    },
+    {
+      "name": "testMethod",
+      "value": "Delete_Candidate"
+    },
+    {
+      "name": "testClass",
+      "value": "CandidatesPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Delete_Candidate()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Delete_Candidate()"
+  },
+  "stage": "finished",
+  "description": "Удаление соискателя\n",
+  "steps": [
+    {
+      "name": "Delete_Candidate()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743340368701,
+          "stop": 1743340369280
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743340369280,
+          "stop": 1743340370619
+        },
+        {
+          "name": "Нажатие на иконку удаления для записи AvtoTestoOG",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743340370619,
+          "stop": 1743340371714
+        },
+        {
+          "name": "Нажатие кнопки Yes, Delete",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743340371714,
+          "stop": 1743340372300
+        },
+        {
+          "name": "Успешно: Successfully Deleted",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743340372300,
+          "stop": 1743340372829
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "bdfe0383620f4b4091ab6d60b3535de4-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743340368701,
+      "stop": 1743340372830
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743340368701,
+  "stop": 1743340372830
+}

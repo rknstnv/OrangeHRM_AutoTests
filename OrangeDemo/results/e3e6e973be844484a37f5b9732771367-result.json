@@ -1,0 +1,65 @@
+{
+  "uuid": "07e33a77-4a6c-4f1e-9f29-02ffc601cc99-tr-0-1014",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongFirstName()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongFirstName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_LongFirstName"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_LongFirstName()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_LongFirstName()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с масимальной длиной более 30 символов в поле Имя\n",
+  "steps": [
+    {
+      "name": "Fail_Create_LongFirstName()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "76a0305ef17c44b7ae6a1d2cdba6ea49-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743330763459,
+      "stop": 1743330763460
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743330763459,
+  "stop": 1743330763460
+}

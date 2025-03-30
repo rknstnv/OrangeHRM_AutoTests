@@ -1,0 +1,186 @@
+{
+  "uuid": "301baddc-a855-4cb7-a5eb-49ed51db889a-tr-0-1006",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WithoutFirstName()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WithoutFirstName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#11"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WithoutFirstName"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WithoutFirstName()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_WithoutFirstName()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи без заполнения поля Имя\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WithoutFirstName()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317436354,
+          "stop": 1742317437474
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317437474,
+          "stop": 1742317439240
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317439240,
+          "stop": 1742317440089
+        },
+        {
+          "name": "Заполнение поля First Name значением  ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317440089,
+          "stop": 1742317440645
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestYRd",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317440645,
+          "stop": 1742317440703
+        },
+        {
+          "name": "Заполнение поля Email значением test94@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317440703,
+          "stop": 1742317440755
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317440755,
+          "stop": 1742317440805
+        },
+        {
+          "name": "Отображение ошибки Required в поле First Name",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742317445819,
+          "stop": 1742317445854
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "895e9f367a3841cb8620092297ba5a78-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1742317436353,
+      "stop": 1742317445856
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1742317436353,
+  "stop": 1742317445856
+}

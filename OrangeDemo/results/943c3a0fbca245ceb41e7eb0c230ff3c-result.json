@@ -1,0 +1,65 @@
+{
+  "uuid": "e3ecca81-1dce-4f93-a3e5-1b95fcb627ca-tr-0-1024",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongDateFormat()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongDateFormat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WrongDateFormat"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WrongDateFormat()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_WrongDateFormat()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с невалидной датой\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WrongDateFormat()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "92e16327a656440d876c67390cad79b5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743328770196,
+      "stop": 1743328770197
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743328770196,
+  "stop": 1743328770197
+}

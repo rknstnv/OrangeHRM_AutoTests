@@ -1,0 +1,65 @@
+{
+  "uuid": "8be40667-ed65-43c9-a7d7-e0019fb8f4ea-tr-0-1022",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongContactNumber()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongContactNumber()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WrongContactNumber"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WrongContactNumber()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_WrongContactNumber()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с невалидным номером телефона\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WrongContactNumber()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6ed3eb602a4440d0bd18cca959913ae2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743328575945,
+      "stop": 1743328575947
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743328575945,
+  "stop": 1743328575947
+}

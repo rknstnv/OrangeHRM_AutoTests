@@ -1,0 +1,236 @@
+{
+  "uuid": "ac174d20-0d16-4902-83d8-22803beaa59e-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_Recruitment()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : By.XPath: \"//label[text()='Notes']/../..//textarea[@placeholder='Type here']\" не видно на странице",
+    "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass11_0.<Fill_FieldByLabelAndTextarea>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 174\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Fill_FieldByLabelAndTextarea(String fieldName, String text) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 171\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String contactNumber, String keywords, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 52\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 32\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя\n",
+  "steps": [
+    {
+      "name": "Create_Recruitment()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Exception : By.XPath: \"//label[text()='Notes']/../..//textarea[@placeholder='Type here']\" не видно на странице",
+        "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass11_0.<Fill_FieldByLabelAndTextarea>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 174\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Fill_FieldByLabelAndTextarea(String fieldName, String text) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 171\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String contactNumber, String keywords, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 52\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 32\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320259644,
+          "stop": 1742320262296
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320262296,
+          "stop": 1742320263794
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320263795,
+          "stop": 1742320264903
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestAZY",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320264903,
+          "stop": 1742320265507
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestZYz",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320265507,
+          "stop": 1742320265589
+        },
+        {
+          "name": "Заполнение поля Email значением test89@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320265589,
+          "stop": 1742320265698
+        },
+        {
+          "name": "Заполнение поля Middle Name значением xUsxo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320265698,
+          "stop": 1742320265779
+        },
+        {
+          "name": "Заполнение поля Contact Number значением 77612178231",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320265779,
+          "stop": 1742320265859
+        },
+        {
+          "name": "Заполнение поля Keywords значением znUZP",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320265859,
+          "stop": 1742320265934
+        },
+        {
+          "name": "Заполнение поля Date of Application значением  ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320265934,
+          "stop": 1742320266010
+        },
+        {
+          "name": "Заполнение поля Notes значением CbFnmRSxVJ",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "By.XPath: \"//label[text()='Notes']/../..//textarea[@placeholder='Type here']\" не видно на странице",
+            "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass11_0.<Fill_FieldByLabelAndTextarea>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 174\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742320266010,
+          "stop": 1742320266036
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b95d78d9d01e45b8afeaad438fe1fa62-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1742320259644,
+      "stop": 1742320266042
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1742320259643,
+  "stop": 1742320266043
+}

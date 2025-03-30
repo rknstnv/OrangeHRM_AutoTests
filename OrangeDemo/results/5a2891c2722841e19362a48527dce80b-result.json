@@ -1,0 +1,201 @@
+{
+  "uuid": "b93e5e15-1f79-4c2d-8e33-83e327d33759-tr-0-1006",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_RecruitmentWithKeepData()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_RecruitmentWithKeepData()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#10"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_RecruitmentWithKeepData"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_RecruitmentWithKeepData()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Create_RecruitmentWithKeepData()"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя с согласием на хранение данных\n",
+  "steps": [
+    {
+      "name": "Create_RecruitmentWithKeepData()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336037340,
+          "stop": 1743336039010
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336039010,
+          "stop": 1743336040243
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336040243,
+          "stop": 1743336041146
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestobV",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336041146,
+          "stop": 1743336041758
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestYTl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336041758,
+          "stop": 1743336041867
+        },
+        {
+          "name": "Заполнение поля Email значением test75@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336041867,
+          "stop": 1743336041998
+        },
+        {
+          "name": "Установка флажка у поля чекбокса Consent to keep data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336041998,
+          "stop": 1743336042070
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336042070,
+          "stop": 1743336042146
+        },
+        {
+          "name": "Успешно: Successfully Saved",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743336042146,
+          "stop": 1743336042678
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a86bfbbda2a84575bd26b015476c0904-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743336037339,
+      "stop": 1743336042683
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743336037338,
+  "stop": 1743336042684
+}

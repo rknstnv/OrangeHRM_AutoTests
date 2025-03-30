@@ -7,19 +7,22 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
+using OpenQA.Selenium.Remote;
 
 namespace OrangeDemo.UiElemenets
 {
     public class BaseDriver
     {
         public IWebDriver driver;
+        private string remoteWdUri = "http://localhost:4444/";
 
         public BaseDriver()
         {
             driver = StartBrowser();
         }
 
-        private WebDriver StartBrowser()
+        // Домашний
+        private WebDriver StartBrowser() 
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("start-maximized");
@@ -27,6 +30,21 @@ namespace OrangeDemo.UiElemenets
 
             return new ChromeDriver(options);
         }
+
+        // Рабочий
+        //private RemoteWebDriver StartBrowser() 
+        //{
+        //    Dictionary<string, object> selenoidOptions = new Dictionary<string, object>();
+        //    selenoidOptions.Add("enableVNC", true);
+        //    selenoidOptions.Add("browser", "chrome");
+        //    selenoidOptions.Add("version", "128.0");
+
+        //    ChromeOptions options = new ChromeOptions();
+        //    options.AddArgument("start-maximized");
+        //    options.AddArguments("--incognito");
+
+        //    return new RemoteWebDriver(new Uri(remoteWdUri + "wd" + Path.DirectorySeparatorChar + "hub"), options.ToCapabilities());
+        //}
 
         public void Quiet()
         {

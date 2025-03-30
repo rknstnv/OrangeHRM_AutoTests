@@ -1,0 +1,191 @@
+{
+  "uuid": "f80f7dda-a7b7-4ce8-8221-cba2f76a3433-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_Recruitment"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_Recruitment()",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Exception : By.XPath: //div[contains(@class, 'oxd-select-dropdown --positon-bottom')]//div//span[contains(text(), 'Senior QA Lead')] не видно на странице",
+    "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass17_0.<Select_DropDownRecord>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 254\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Select_DropDownRecord(String recordName) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 252\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String vacancy, String contactNumber, String keywords, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 37\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 32\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя\n",
+  "steps": [
+    {
+      "name": "Create_Recruitment()",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Exception : By.XPath: //div[contains(@class, 'oxd-select-dropdown --positon-bottom')]//div//span[contains(text(), 'Senior QA Lead')] не видно на странице",
+        "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass17_0.<Select_DropDownRecord>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 254\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at OrangeDemo.UiElemenets.WebPage.Select_DropDownRecord(String recordName) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 252\r\n   at OrangeDemo.Pages.RecruitmentPage.CreateRecruitment(String firstName, String lastName, String Email, String middleName, String vacancy, String contactNumber, String keywords, String date, String notes) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\Pages\\RecruitmentPage.cs:line 37\r\n   at OrangeDemo.UiTests.RecruitmentPageTests.Create_Recruitment() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiTests\\RecruitmentPageTests.cs:line 32\r\n   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)\r\n   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326585772,
+          "stop": 1742326587452
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326587452,
+          "stop": 1742326588649
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326588650,
+          "stop": 1742326589549
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestaBK",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326589549,
+          "stop": 1742326590156
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestWhP",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326590156,
+          "stop": 1742326590248
+        },
+        {
+          "name": "Заполнение поля Email значением test19@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326590248,
+          "stop": 1742326590336
+        },
+        {
+          "name": "Заполнение поля Middle Name значением UcsbF",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326590336,
+          "stop": 1742326590412
+        },
+        {
+          "name": "Выбор записи Senior QA Lead в выпадающем списке",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "By.XPath: //div[contains(@class, 'oxd-select-dropdown --positon-bottom')]//div//span[contains(text(), 'Senior QA Lead')] не видно на странице",
+            "trace": "   at OrangeDemo.UiElemenets.BaseDriver.WaitUntilElementVisible(By locator, TimeSpan timeSpan) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 130\r\n   at OrangeDemo.UiElemenets.BaseDriver.GetElement(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 154\r\n   at OrangeDemo.UiElemenets.BaseDriver.Click(By locator) in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\BaseDriver.cs:line 161\r\n   at OrangeDemo.UiElemenets.WebPage.<>c__DisplayClass17_0.<Select_DropDownRecord>b__0() in C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\UiElements\\WebPage.cs:line 254\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1742326590412,
+          "stop": 1742326600708
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "698e4e7f9ec640cdb92534d4a8e2d068-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1742326585771,
+      "stop": 1742326600715
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1742326585770,
+  "stop": 1742326600716
+}

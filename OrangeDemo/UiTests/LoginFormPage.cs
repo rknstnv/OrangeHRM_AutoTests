@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using OrangeDemo.Pages;
+using OrangeDemo.Pages.Login;
 using OrangeDemo.UiElemenets;
 using System;
 using System.Collections.Generic;

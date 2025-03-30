@@ -1,0 +1,65 @@
+{
+  "uuid": "2df2c20e-34f3-4302-87d1-6d41a2b22931-tr-0-1016",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongLastName()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_LongLastName()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_LongLastName"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_LongLastName()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_LongLastName()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с масимальной длиной более 30 символов в поле Фамилия\n",
+  "steps": [
+    {
+      "name": "Fail_Create_LongLastName()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8b80357584a64de1b7079e09cb9002d0-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743328781716,
+      "stop": 1743328781718
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743328781716,
+  "stop": 1743328781718
+}

@@ -1,0 +1,65 @@
+{
+  "uuid": "94eb7da5-37a2-4ced-9696-4577d53fcbd9-tr-0-1020",
+  "historyId": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongEmail()",
+  "fullName": "OrangeDemo.UiTests.RecruitmentPageTests.Fail_Create_WrongEmail()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WrongEmail"
+    },
+    {
+      "name": "testClass",
+      "value": "RecruitmentPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WrongEmail()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_WrongEmail()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с не валидным эмейлом\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WrongEmail()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "4e0510ff8fdd40b1b595cb5c133280fb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743329520085,
+      "stop": 1743329520087
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743329520085,
+  "stop": 1743329520087
+}

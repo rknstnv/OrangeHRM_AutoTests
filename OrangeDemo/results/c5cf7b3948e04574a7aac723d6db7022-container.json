@@ -1,0 +1,46 @@
+{
+  "uuid": "442c6c71-44be-4263-b5a0-1b03ace8a1c6-tc-0-1003",
+  "name": "OrangeDemo.UiTests.RecruitmentPageTests.Delete_Recruitment()",
+  "children": [
+    "259c7044-8630-4643-b222-cc11b2937def-tr-0-1008"
+  ],
+  "befores": [
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1743336272176,
+      "stop": 1743336272176
+    }
+  ],
+  "afters": [
+    {
+      "name": "Quiet",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1743336272176,
+      "stop": 1743336272176
+    }
+  ],
+  "links": [],
+  "start": 1743336268143,
+  "stop": 1743336272177
+}

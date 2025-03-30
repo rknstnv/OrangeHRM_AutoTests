@@ -1,0 +1,156 @@
+{
+  "uuid": "37fe46d2-c022-4d35-b7fb-f85e47572130-tr-0-1004",
+  "historyId": "OrangeDemo.UiTests.Recruitment.Vacancies.VacanciesPageTests.CreateVacancies()",
+  "fullName": "OrangeDemo.UiTests.Recruitment.Vacancies.VacanciesPageTests.CreateVacancies()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#12"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests.Recruitment.Vacancies"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateVacancies"
+    },
+    {
+      "name": "testClass",
+      "value": "VacanciesPageTests"
+    }
+  ],
+  "links": [],
+  "name": "CreateVacancies()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "CreateVacancies()"
+  },
+  "stage": "finished",
+  "description": "\n",
+  "steps": [
+    {
+      "name": "CreateVacancies()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341450508,
+          "stop": 1743341452214
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341452215,
+          "stop": 1743341453579
+        },
+        {
+          "name": "Выбор вкладки меню Vacancies",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341453580,
+          "stop": 1743341454466
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341454466,
+          "stop": 1743341455359
+        },
+        {
+          "name": "Заполнение поля Vacancy Name значением AvtoTestZkOLZ",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341455359,
+          "stop": 1743341456002
+        },
+        {
+          "name": "Выбор записи QA Lead в выпадающем списке",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341456003,
+          "stop": 1743341456153
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "f49996d47c9c4912bb8710e16c8fdfee-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743341450507,
+      "stop": 1743341461160
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743341450507,
+  "stop": 1743341461161
+}
