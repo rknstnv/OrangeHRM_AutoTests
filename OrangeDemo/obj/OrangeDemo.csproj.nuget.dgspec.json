@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj": {}
+    "C:\\Users\\Renat\\source\\repos\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj": {
+    "C:\\Users\\Renat\\source\\repos\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Renat\\source\\repos\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj",
         "projectName": "OrangeDemo",
-        "projectPath": "C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj",
+        "projectPath": "C:\\Users\\Renat\\source\\repos\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj",
         "packagesPath": "C:\\Users\\Renat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\obj\\",
+        "outputPath": "C:\\Users\\Renat\\source\\repos\\OrangeDemo\\OrangeDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

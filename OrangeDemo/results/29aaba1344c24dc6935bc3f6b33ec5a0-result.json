@@ -1,0 +1,216 @@
+{
+  "uuid": "061e72a8-823f-4d94-a5d8-7bd8693d7894-tr-0-1029",
+  "historyId": "OrangeDemo.UiTests.Recruitment.Candidates.CandidatesPageTests.Fail_Create_WrongDateFormat()",
+  "fullName": "OrangeDemo.UiTests.Recruitment.Candidates.CandidatesPageTests.Fail_Create_WrongDateFormat()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests.Recruitment.Candidates"
+    },
+    {
+      "name": "testMethod",
+      "value": "Fail_Create_WrongDateFormat"
+    },
+    {
+      "name": "testClass",
+      "value": "CandidatesPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Fail_Create_WrongDateFormat()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Fail_Create_WrongDateFormat()"
+  },
+  "stage": "finished",
+  "description": "Добавление записи с невалидной датой\n",
+  "steps": [
+    {
+      "name": "Fail_Create_WrongDateFormat()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341774393,
+          "stop": 1743341774987
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341774987,
+          "stop": 1743341776322
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341776322,
+          "stop": 1743341777171
+        },
+        {
+          "name": "Заполнение поля First Name значением Testasd",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341777171,
+          "stop": 1743341777762
+        },
+        {
+          "name": "Заполнение поля Last Name значением TestASD",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341777762,
+          "stop": 1743341777835
+        },
+        {
+          "name": "Заполнение поля Email значением test13@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341777835,
+          "stop": 1743341777946
+        },
+        {
+          "name": "Заполнение поля Date of Application значением XxTAM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341777946,
+          "stop": 1743341778083
+        },
+        {
+          "name": "Заполнение поля Notes значением ozmjn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341778083,
+          "stop": 1743341778171
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341778171,
+          "stop": 1743341778538
+        },
+        {
+          "name": "Отображение ошибки Should be a valid date in yyyy-dd-mm format в поле Date of Application",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341778538,
+          "stop": 1743341778579
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a197fd0a5f034439b789c38a11acc51f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743341774393,
+      "stop": 1743341778579
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743341774393,
+  "stop": 1743341778579
+}

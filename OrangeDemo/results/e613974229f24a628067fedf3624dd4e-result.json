@@ -1,0 +1,246 @@
+{
+  "uuid": "16db5612-1f68-4617-a04d-4dc0f05eecce-tr-0-1009",
+  "historyId": "OrangeDemo.UiTests.Recruitment.Candidates.CandidatesPageTests.Create_CandidateWithKeepData()",
+  "fullName": "OrangeDemo.UiTests.Recruitment.Candidates.CandidatesPageTests.Create_CandidateWithKeepData()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#9"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6AL3819"
+    },
+    {
+      "name": "package",
+      "value": "OrangeDemo.UiTests.Recruitment.Candidates"
+    },
+    {
+      "name": "testMethod",
+      "value": "Create_CandidateWithKeepData"
+    },
+    {
+      "name": "testClass",
+      "value": "CandidatesPageTests"
+    }
+  ],
+  "links": [],
+  "name": "Create_CandidateWithKeepData()",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Create_CandidateWithKeepData()"
+  },
+  "stage": "finished",
+  "description": "Добавление соискателя с согласием на хранение персональных данных\n",
+  "steps": [
+    {
+      "name": "Create_CandidateWithKeepData()",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341753584,
+          "stop": 1743341755518
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341755520,
+          "stop": 1743341757005
+        },
+        {
+          "name": "Нажатие кнопки Add",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341757006,
+          "stop": 1743341757933
+        },
+        {
+          "name": "Заполнение поля First Name значением AvtoTestHde",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341757933,
+          "stop": 1743341758546
+        },
+        {
+          "name": "Заполнение поля Last Name значением AvtoTestpIs",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341758546,
+          "stop": 1743341758671
+        },
+        {
+          "name": "Заполнение поля Email значением test13@test.com",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341758671,
+          "stop": 1743341758818
+        },
+        {
+          "name": "Установка флажка у поля чекбокса Consent to keep data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341758819,
+          "stop": 1743341758889
+        },
+        {
+          "name": "Нажатие кнопки Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341758889,
+          "stop": 1743341759000
+        },
+        {
+          "name": "Успешно: Successfully Saved",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341759001,
+          "stop": 1743341759538
+        },
+        {
+          "name": "Открытие страницы https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341759538,
+          "stop": 1743341760343
+        },
+        {
+          "name": "Переход к вкладке Recruitment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341760343,
+          "stop": 1743341761454
+        },
+        {
+          "name": "Проверка отображения элемента: AvtoTestHde",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1743341761454,
+          "stop": 1743341762516
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ed22250bbf6d4b23815afe14e152db63-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1743341753583,
+      "stop": 1743341762521
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1743341753583,
+  "stop": 1743341762524
+}

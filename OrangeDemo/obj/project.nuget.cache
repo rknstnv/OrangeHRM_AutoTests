@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JgwYvJZVyk0=",
+  "dgSpecHash": "e6px+MXI5OQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Renat\\Documents\\OrangeDemo\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj",
+  "projectFilePath": "C:\\Users\\Renat\\source\\repos\\OrangeDemo\\OrangeDemo\\OrangeDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Renat\\.nuget\\packages\\allure.commons\\3.5.0.73\\allure.commons.3.5.0.73.nupkg.sha512",
     "C:\\Users\\Renat\\.nuget\\packages\\aspectinjector\\2.6.0\\aspectinjector.2.6.0.nupkg.sha512",

@@ -217,3 +217,4 @@ C:\Users\Renat\Documents\OrangeDemo\OrangeDemo\OrangeDemo\obj\Debug\net8.0\Orang
 C:\Users\Renat\Documents\OrangeDemo\OrangeDemo\OrangeDemo\obj\Debug\net8.0\OrangeDemo.genruntimeconfig.cache
 C:\Users\Renat\Documents\OrangeDemo\OrangeDemo\OrangeDemo\obj\Debug\net8.0\ref\OrangeDemo.dll
 C:\Users\Renat\Documents\OrangeDemo\OrangeDemo\OrangeDemo\bin\Debug\net8.0\allureConfig.json
+C:\Users\Renat\source\repos\OrangeDemo\OrangeDemo\bin\Debug\net8.0\allureConfig.json
